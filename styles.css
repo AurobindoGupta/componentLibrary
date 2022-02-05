@@ -1,3 +1,22 @@
-h1{
-    color: red;
+h1 {
+  color: red;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  /* border: 0.1rem solid black; */
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1px grey;
+}
+.navbarHeroImg{
+    max-width: 5rem;
+   
+    border-radius: 0.5rem;
+}
+.navLinks {
+  display: flex;
+  list-style-type: none;
+}
+.navLinksBtn {
+  padding: 1rem;
 }
