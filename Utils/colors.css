@@ -1,0 +1,26 @@
+:root{
+    /* --background-color:#DFE5EA; */
+    --background-color:#FFFFFF;
+    --primary-color: #041726;
+    --secondary-color:#353D43;
+    --themeGrey-color:#929292;
+    --themeBright-color:#9d99be;
+    --themeBright-hover-color:#cec9df;
+    --baseRed-color:#FF0000;
+    --primaryText-color:#011623;
+    --secondaryText-color:#929292;
+    --navbar-color:#DFE5EA;
+
+}
+[theme="dark"]{
+    --background-color:#011623;
+    --primary-color: #023556;
+    --secondary-color:#152733;
+    --themeGrey-color:#1D2123;
+    --themeBright-color:#9d99be;
+    --themeBright-hover-color:#cec9df;
+    --baseRed-color:#6F0000;
+    --primaryText-color:#DFE5EA;
+    --secondaryText-color:#929292;
+}
+/* color palette from https://paletton.com/ */

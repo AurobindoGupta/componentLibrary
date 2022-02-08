@@ -1,22 +1,92 @@
-h1 {
-  color: red;
+@import url(Utils/utils.css);
+
+::-webkit-scrollbar {
+  display: none;
+}
+.baseContainer {
+  max-width: 1440px;
+  margin: auto;
+  height: 100%;
+  padding: 0.2rem;
+  background-color: var(--background-color);
 }
 .navBar {
   display: flex;
+  background: var(--navbar-color);
   justify-content: space-between;
   /* border: 0.1rem solid black; */
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 1px grey;
 }
-.navbarHeroImg{
-    max-width: 5rem;
-   
+.navLinksBtn.if-active {
+  background: var(--themeBright-color);
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  pointer-events: none;
+}
+.navLinksBtn:hover{
+    background-color: var(--themeBright-hover-color);
+    font-size: 1.5rem;
     border-radius: 0.5rem;
+    cursor:pointer
+}
+.heroContainer {
+  display: flex;
+  align-items: flex-end;
+}
+.heroTitle {
+  font-family: var(--heroTitle-font);
+  height: 2.6rem;
+  width: auto;
+  font-size: 2.5rem;
+}
+.navbarHeroImg {
+  max-width: 5rem;
+  border-radius: 0.5rem;
+}
+.navbarHeroImg:hover {
+  transition: 0.70s;
+  /* -webkit-transform: rotate(180deg); */
+  transform: rotate(360deg);
+  cursor: pointer;
 }
 .navLinks {
   display: flex;
+  align-items: center;
   list-style-type: none;
 }
 .navLinksBtn {
   padding: 1rem;
+}
+.landingPageContent {
+  padding: 1rem;
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landingPageContent_images {
+  display: flex;
+}
+.landingPage_Img1 {
+  max-width: 40rem;
+  padding: 0.5rem;
+}
+.landingPage_Img2 {
+  max-width: 30rem;
+  max-height: 20rem;
+  padding: 0.5rem;
+}
+.textBox {
+  text-align: center;
+  border: 0.1rem solid black;
+  max-width: 30rem;
+}
+.textBox:hover {
+  margin-top: 5rem;
+  transform: scale(1.3);
+  transition: all ease 500ms;
+  cursor: default;
 }
