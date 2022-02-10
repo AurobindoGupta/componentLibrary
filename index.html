@@ -7,17 +7,71 @@
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Personal component library" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Component Library</title>
+    <title>Component Library Landing page</title>
   </head>
   <body>
-    <nav class="navBar">
-      <img src="Utils/images/panda sulk2.jpg" class="navbarImg" />
-      <ul>
-        <li>Home</li>
-        <li>Docs</li>
-        <li>Github</li>
-      </ul>
-    </nav>
-    <h1>Landing page</h1>
+    <!-- ................BASE CONTAINER............. -->
+    <div class="baseContainer">
+      <!-- ................NAV BAR............. -->
+
+      <nav class="navBar">
+        <div class="heroContainer">
+          <img
+            src="Utils/images/panda sulk2.jpg"
+            class="navbarHeroImg"
+            onclick="window.location.href='./Components/index.html'"
+          />
+          <p class="heroTitle">PandaUI</p>
+        </div>
+        <ul class="navLinks">
+          <li class="navLinksBtn if-active">Home</li>
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='./Documentation/alert/index.html'"
+          >
+            Docs
+          </li>
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
+          >
+            Github
+          </li>
+        </ul>
+      </nav>
+      <!-- ................NAV BAR............. -->
+      <!-- ................PAGE CONTENT ............................... -->
+
+      <div class="pageContent">
+        <div class="landingPageContent_images">
+          <img src="Utils/images/componentImg.svg" class="landingPage_Img1" />
+          <img src="Utils/images/componentImg2.svg" class="landingPage_Img2" />
+        </div>
+        <div class="textBox">
+          <h3 class="textBoxHeading">Welcome</h3>
+          <p class="textBoxContent">
+            This component library has been created to help you with designing
+            your desired components. To use this library please follow the
+            directions provided in the documentation.
+          </p>
+        </div>
+      </div>
+      <!-- ................PAGE CONTENT ............................... -->
+      <!-- ................FOOTER ............................... -->
+      <footer class="homeFooter">
+        <div class="footerContent">
+          <a href="https://github.com/AurobindoGupta" class="footerLinks"  target="_blank" rel="noopener noreferrer">
+            <img src="/Utils/images/GitHub.png" title="Github" />
+            <p>GitHub</p></a>
+
+          <a href="https://www.linkedin.com/in/aurobindo-gupta/" class="footerLinks"  target="_blank" rel="noopener noreferrer">
+            <img src="/Utils/images/linkdin.png" title="Linkedin" />
+            <p>Linkedin</p>
+          </a>
+        </div>
+      </footer>
+      <!-- ................FOOTER ............................... -->
+    </div>
+    <!-- ................BASE CONTAINER............. -->
   </body>
 </html>
