@@ -1,9 +1,11 @@
 @import url(Utils/utils.css);
-
 ::-webkit-scrollbar {
   display: none;
 }
 .baseContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   margin: auto;
   height: 100%;
@@ -17,6 +19,7 @@
   /* border: 0.1rem solid black; */
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 1px grey;
+  flex: 0 0 auto;
 }
 .navLinksBtn.if-active {
   background: var(--themeBright-color);
@@ -25,11 +28,11 @@
   border: 0.1rem solid black;
   pointer-events: none;
 }
-.navLinksBtn:hover{
-    background-color: var(--themeBright-hover-color);
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
-    cursor:pointer
+.navLinksBtn:hover {
+  background-color: var(--themeBright-hover-color);
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 .heroContainer {
   display: flex;
@@ -46,7 +49,7 @@
   border-radius: 0.5rem;
 }
 .navbarHeroImg:hover {
-  transition: 0.70s;
+  transition: 0.7s;
   /* -webkit-transform: rotate(180deg); */
   transform: rotate(360deg);
   cursor: pointer;
@@ -59,13 +62,14 @@
 .navLinksBtn {
   padding: 1rem;
 }
-.landingPageContent {
+.pageContent {
   padding: 1rem;
   display: flex;
   height: 80%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1 0 auto;
 }
 .landingPageContent_images {
   display: flex;
@@ -81,12 +85,42 @@
 }
 .textBox {
   text-align: center;
+  font-size: 1.7rem;
   border: 0.1rem solid black;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 .textBox:hover {
   margin-top: 5rem;
   transform: scale(1.3);
   transition: all ease 500ms;
   cursor: default;
+}
+.homeFooter {
+  background: var(--footer-color);
+  padding: 0.2rem;
+  height: 50px;
+  border-radius: 0.5rem;
+  box-shadow: 2px -2px 2px 1px grey;
+  flex: 0 0 auto;
+}
+.footerContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.footerLinks {
+  display: flex;
+  padding: 2rem;
+  opacity: 1.0;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footerLinks:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+.footerLinks img {
+  width: 25px;
 }
