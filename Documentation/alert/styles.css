@@ -1,18 +1,1 @@
-@import url(../../styles.css);
-.docsContent {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-.sideNav {
-  flex-grow: 1;
-  background-color: red;
-}
-.mainContent {
-  flex-grow: 2;
-  background-color: blue;
-}
-.rightNav{
-    flex-grow: 1;
-    background-color: green;
-}
+@import url(../documentation.css);
