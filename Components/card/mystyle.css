@@ -1,0 +1,152 @@
+:root {
+  --background: #fefdfc;
+  --subHeadingGray: #b1b1b0;
+  --txtBtnColor: #ca63ff;
+  --txtBtnHover: #e3c1f3;
+  --iconBtnHover: #d0ccd0;
+}
+/* -------------------------BASIC-------------------------------------- */
+.container {
+  width: 350px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
+  background-color: var(--background);
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+.cardComponent {
+  border: 0.1rem solid black;
+  border-radius: 5%;
+}
+.cardBase {
+  display: flex;
+  flex-direction: column;
+}
+.cardImg {
+  border-radius: 1rem 1rem 0 0;
+}
+.headerGroup {
+  padding: 1rem;
+}
+.heading {
+  margin: 0;
+}
+.subHeading {
+  margin: 0;
+  color: var(--subHeadingGray);
+}
+.textPlaceholder {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+.cardfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: var(--subHeadingGray);
+  border-radius: 0 0 1rem 1rem;
+}
+.textBtnRead,
+.textBtnBookmark,
+.iconBtnHeart,
+.iconBtnShare,
+.iconBtnMenu {
+  background-color: var(--background);
+  border: none;
+  padding: 0.5rem;
+}
+.textBtnRead,
+.textBtnBookmark {
+  border-radius: 0.25rem;
+  color: var(--txtBtnColor);
+  font-size: 1rem;
+}
+.textBtnRead:hover,
+.textBtnBookmark:hover {
+  background-color: var(--txtBtnHover);
+}
+.textBtnRead:focus,
+.textBtnBookmark:focus {
+  background-color: var(--txtBtnHover);
+}
+.iconBtnHeart,
+.iconBtnShare,
+.iconBtnMenu {
+  font-size: 1.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+}
+.iconBtnHeart:hover,
+.iconBtnShare:hover,
+.iconBtnMenu:hover {
+  background-color: var(--iconBtnHover);
+}
+.iconBtnHeart:focus,
+.iconBtnShare:focus,
+.iconBtnMenu:focus {
+  background-color: var(--iconBtnHover);
+}
+/* find how to make perfect circle */
+/* ------------------------------------------------------------------------------ */
+/* -------------------------TXT OVER MEDIA-------------------------------------- */
+/* find a way to do this without position */
+
+.headerGroup.textOverMedia {
+  padding: 1rem;
+  float: right;
+  margin-top: -56%;
+  margin-bottom: 36%;
+  color: white;
+  border-radius: 1rem 1rem 0 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.56), transparent);
+}
+
+/* ------------------------------------------------------------------------------ */
+/* -------------------------With Header-------------------------------------- */
+
+.headerGroup.withHeader {
+  padding: 1rem;
+  order: -1;
+}
+.cardImg.withHeader{
+  border-radius: 0;
+}
+.textPlaceholder.withHeader {
+  padding-top: 1rem;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* -------------------------ONLY BUTTONS-------------------------------------- */
+
+.iconBtn.onlyButtons {
+  visibility: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+/* -------------------------ONLY ICONS-------------------------------------- */
+
+.textBtn.onlyIcons {
+  visibility: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+/* -------------------------IMAGE AND HEADER-------------------------------------- */
+.cardComponent.imageHeader {
+  border-radius: 1rem;
+}
+.cardBase.imageHeader {
+  display: flex;
+  flex-direction: row;
+}
+.cardImg.imageHeader {
+  max-width: 6.875rem;
+  border-radius: 1rem 0 0 0 ;
+}
+
+.textPlaceholder.imageHeader {
+  display: none;
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* ------------------------------------------------------------------------------ */
