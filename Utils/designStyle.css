@@ -1,1 +1,26 @@
-/* ------------BORDER RADIOUS------------ */
+/* ------------PADDING------------ */
+.pd-0 {
+  padding: 0.5rem;
+}
+.pd-1 {
+  padding: 1rem;
+}
+.pd-2 {
+  padding: 1.5rem;
+}
+.pd-3 {
+  padding: 2rem;
+}
+/* --------------MARGIN---------------- */
+.mg-0 {
+  margin: 0.5rem;
+}
+.mg-1 {
+  margin: 1rem;
+}
+.mg-2 {
+  margin: 1.5rem;
+}
+.mg-3 {
+  margin: 2rem;
+}
