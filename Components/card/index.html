@@ -6,273 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CSS assignment card" />
     <link rel="stylesheet" href="mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>cssAssignments</title>
   </head>
   <body>
-    <div class="container">
-      <!-- card1 -->
-      <div class="cardComponent">
-        <div class="cardBase">
+    <div class="componentCard pd-1 mg-1">
+      <!-- standard Card -->
+      <div class="card">
+        <div class="card-img-container">
+          <i class="fa fa-heart-o icon-badge"></i>
           <img
-            class="cardImg"
-            src="../../Utils/images/static img.png"
-            alt="card image"
+            class="card-img"
+            src="/Utils/images/card-img1.png"
+            alt="Card image"
           />
-          <div class="headerGroup">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
           </div>
         </div>
-        <div class="cardfooter">
-          <div class="textBtn">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with shadow -->
+      <div class="card card-shadow">
+        <div class="card-img-container">
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img1.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
           </div>
-          <div class="iconBtn">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with pill badge -->
+      <div class="card">
+        <div class="card-img-container">
+          <p class="pill-badge">NEW</p>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with dismiss -->
+      <div class="card">
+        <div class="card-img-container">
+          <i
+            class="fa fa-close icon-close"
+            onclick="this.parentElement.parentElement.style.display='none'"
+          ></i>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with text overlay -->
+      <div class="card text-overlay">
+        <div class="card-img-container text-overlay">
+          <i
+            class="fa fa-close icon-close"
+            onclick="this.parentElement.parentElement.style.display='none'"
+          ></i>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+          <div class="card-title text-overlay">
+            <p class="title-heading">Nike Sneakers</p>
+            <p class="title-subHeading">Sub-title</p>
+            <div class="price">
+              <p class="current-price">Rs. 2500</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- text only card -->
+      <div class="card text-only">
+        <div class="card-title text-only">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">
+            These are modern Top of the line sneakers, best al round type, can
+            be worn every where
+          </p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
           </div>
         </div>
       </div>
-
-      <!-- card2 -->
-      <div class="cardComponent">
-        <div class="cardBase">
+      <!-- horizontal card -->
+      <div class="card card-horizontal">
+        <div class="card-img-container card-horizontal">
+          <i class="fa fa-heart-o icon-badge"></i>
           <img
-            class="cardImg"
-            src="../../Utils/images/static img.png"
-            alt="card image"
+            class="card-img card-horizontal"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
           />
-          <div class="headerGroup textOverMedia">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
-          </div>
         </div>
-        <div class="cardfooter">
-          <div class="textBtn">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
+        <div class="card-details card-horizontal">
+          <div class="card-title card-horizontal">
+            <p class="title-heading">Nike Sneakers</p>
+            <p class="title-subHeading">Sub-title</p>
+            <div class="price">
+              <p class="current-price">Rs. 2500</p>
+            </div>
           </div>
-          <div class="iconBtn">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- card 3 -->
-      <div class="cardComponent">
-        <div class="cardBase">
-          <img
-            class="cardImg withHeader"
-            src="../../Utils/images/static img.png"
-            alt="card image"
-          />
-          <div class="headerGroup withHeader">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder withHeader">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
-          </div>
-        </div>
-        <div class="cardfooter">
-          <div class="textBtn">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
-          </div>
-          <div class="iconBtn">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- card4 -->
-      <div class="cardComponent">
-        <div class="cardBase">
-          <img
-            class="cardImg"
-            src="../../Utils/images/static img.png"
-            alt="card image"
-          />
-          <div class="headerGroup">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
-          </div>
-        </div>
-        <div class="cardfooter">
-          <div class="textBtn">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
-          </div>
-          <div class="iconBtn onlyButtons">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- card5 -->
-      <div class="cardComponent">
-        <div class="cardBase">
-          <img
-            class="cardImg"
-            src="../../Utils/images/static img.png"
-            alt="card image"
-          />
-          <div class="headerGroup">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
-          </div>
-        </div>
-        <div class="cardfooter">
-          <div class="textBtn onlyIcons">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
-          </div>
-          <div class="iconBtn">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- card6 -->
-      <div class="cardComponent imageHeader">
-        <div class="cardBase imageHeader">
-          <img
-            class="cardImg imageHeader"
-            src="../../Utils/images/static img.png"
-            alt="card image"
-          />
-          <div class="headerGroup">
-            <h2 class="heading">heading heading heading</h2>
-            <h4 class="subHeading">sub-heading</h4>
-          </div>
-          <div>
-            <p class="textPlaceholder imageHeader">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              egestas tellus felis, non lobortis velit pharetra porttitor.
-            </p>
-          </div>
-        </div>
-        <div class="cardfooter">
-          <div class="textBtn">
-            <button class="textBtnRead">READ</button>
-            <button class="textBtnBookmark">BOOKMARK</button>
-          </div>
-          <div class="iconBtn">
-            <button class="iconBtnHeart">
-              <span>
-                <ion-icon name="heart"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnShare">
-              <span>
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-            </button>
-            <button class="iconBtnMenu">
-              <span>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </span>
-            </button>
+          <div class="card-button card-horizontal">
+            <button class="btn btn-primary button-add card-horizontal">Add to Cart</button>
+            <button class="btn btn-secondary button-add card-horizontal">Add to Wishlist</button>
           </div>
         </div>
       </div>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
   </body>
 </html>
