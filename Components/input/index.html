@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Component library content - Input " />
-    <title>Alert</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Input</title>
   </head>
   <body>
-    <h1>ALERT</h1>
+    <div class="componentInput pd-1 mg-1">
+      <!-- standard Input -->
+      <div class="input-form">
+        <p class="input-label">Name</p>
+        <input type="text" placeholder="Jhon Doe" class="input-space" />
+      </div>
+      <!-- input required -->
+      <div class="input-form">
+        <p class="input-label">Email*</p>
+        <div class="input-with-error">
+          <input type="email" placeholder="" class="input-space input-error" />
+          <p class="error-msg">Error Message!!</p>
+        </div>
+      </div>
+      <!-- input TextBox  -->
+      <div class="input-form textbox">
+        <p class="input-label">Enter Text</p>
+        <textarea
+          type="text"
+          placeholder="Enter text here....."
+          class="input-space textbox"
+          rows="3"
+          cols="1"
+        ></textarea>
+      </div>
+    </div>
   </body>
 </html>
