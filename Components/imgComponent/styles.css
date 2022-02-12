@@ -1,0 +1,13 @@
+@import url(/rootStyles.css);
+
+.img-container{
+    max-width:fit-content;
+    padding: 1rem;
+}
+.img-responsive{
+    width: 70rem;
+}
+.img-responsive.img-round{
+    border: 1px solid black;
+    border-radius: 50%;
+}
