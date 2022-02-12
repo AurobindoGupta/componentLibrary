@@ -1,0 +1,53 @@
+@import url(/rootStyles.css);
+
+.componentAvatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.group {
+  display: flex;
+  justify-content: space-around;
+}
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+}
+.avatar-S {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+.avatar-XS {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+}
+.avatar-L {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+}
+.avatar-R {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.avatar-R-L {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.avatar-R-XS {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+.avatar-R-S {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
