@@ -1,0 +1,59 @@
+@import url(/rootStyles.css);
+
+.componentAlert {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.group {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 25%;
+  right: 25%;
+  top: 0%;
+}
+/* use alertContainer to position alert */
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid black;
+  background-color: var(--themeGrey-color);
+  color: white;
+  max-width: 20rem;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.closebtn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.alert.alert-success{
+  background-color: var(--alertGreen-color);
+}
+.alert.alert-info{
+  background-color: var(--alertBlue-color);
+}
+.alert.alert-error{
+  background-color: var(--alertRed-color);
+}
+.alert.alert-warning{
+  background-color: var(--alertOrange-color);
+}
+.alert.withText{
+ align-items: start;
+ padding: 0.5rem;
+}
+.alert.withText .icon{
+  margin: 0.2rem 0;
+}
+.alertContent{
+  padding: 0 0.5rem ;
+  text-align: left;
+}
