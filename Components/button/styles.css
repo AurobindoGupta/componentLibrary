@@ -1,0 +1,108 @@
+@import url(/rootStyles.css);
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  color: var(--primary-color);
+}
+.btn-primary {
+  background-color: var(--btnPrimaryBlue-color);
+  padding: 0.25rem;
+  font-size: 1rem;
+  color: white;
+}
+.btn-secondary {
+  background-color: var(--btnSecondaryGrey-color);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+.btn-red {
+  background-color: var(--btnCancelRed-color);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+.btn-link {
+  background-color: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: var(--btnPrimaryBlue-color);
+}
+
+.btn-primary.btn-outlined {
+  background: none;
+  padding: 0.25rem;
+  font-size: 1rem;
+  color: var(--btnPrimaryBlue-color);
+  border: 1px solid var(--btnPrimaryBlue-color);
+}
+.btn-secondary.btn-outlined {
+  background: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--btnSecondaryGrey-color);
+  border: 1px solid var(--btnSecondaryGrey-color);
+}
+.btn-red.btn-outlined {
+  background: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--btnCancelRed-color);
+  border: 1px solid var(--btnCancelRed-color);
+}
+.btn-link {
+  background-color: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: var(--btnPrimaryBlue-color);
+}
+.btn-primary.btn-outlined:hover {
+  background: var(--btnPrimaryBlue-color);
+  color: white;
+}
+.btn-secondary.btn-outlined:hover {
+  background: var(--btnSecondaryGrey-color);
+  color: white;
+}
+.btn-red.btn-outlined:hover {
+  background: var(--btnCancelRed-color);
+  color: white;
+}
+.btn-icon .icon {
+  padding: 0 0.25rem 0 0;
+}
+.btn-disabled {
+  pointer-events: none;
+  background: var(--btnSecondaryGrey-color);
+}
+.btn-disabled:hover {
+  opacity: none;
+  transform: none;
+  color: white;
+}
+.btn-floating{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
