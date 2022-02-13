@@ -1,0 +1,26 @@
+@import url(/rootStyles.css);
+
+.list-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.list-roman {
+  list-style-type: upper-roman;
+}
+.list-abc {
+  list-style-type: lower-alpha;
+}
+.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.list-none {
+  list-style: none;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-circle {
+  list-style-type: circle
+}
