@@ -6,7 +6,8 @@
 }
 .leftNav {
   flex-grow: 1;
-  background-color: red;
+  background-color: rgb(248, 243, 243);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .mainContent {
   flex-grow: 5;
