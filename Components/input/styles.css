@@ -25,3 +25,14 @@
     margin: 0 1rem;
     padding: 1rem;
 }
+.input-form.full-form{
+    display: flex;
+    flex-direction: column;
+}
+.input-space.full-form{
+    margin:0 1rem;
+}
+.form-container{
+    width: 400px;
+    height: 500px;
+}

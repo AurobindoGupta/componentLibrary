@@ -35,6 +35,20 @@
           cols="1"
         ></textarea>
       </div>
+      <!-- imput form with validation -->
+      <div class="form-container">
+        <div class="input-form full-form">
+          <label class="input-label" for="input-name">Name</label>
+          <input type="text" required placeholder="Jhon Doe" class="input-space full-form input-name"  id="input-name"  
+          oninvalid="this.setCustomValidity('Enter User Name Here')" onchange="this.setCustomValidity('')" type="text"/>
+          <label class="input-label" for="input-number">Number</label>
+          <input type="tel" pattern="[-+]?[0-9]" placeholder="1234567890" maxlength="10" class="input-space full-form input-number"  id="input-name" required/>
+          <label class="input-label" for="input-email">Name</label>
+          <input type="email" placeholder="jhondoe@gmail.com" class="input-space full-form input-email"  id="input-name" required/>
+          <label class="input-label" for="input-submit"></label>
+          <input type="submit" class="input-space full-form input-submit"  id="input-submit" value="Submit"/>
+        </div>
+      
     </div>
   </body>
 </html>
