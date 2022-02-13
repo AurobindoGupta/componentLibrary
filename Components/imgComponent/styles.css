@@ -1,13 +1,25 @@
 @import url(/rootStyles.css);
 
-.img-container{
-    max-width:fit-content;
-    padding: 1rem;
+.img-container {
+  padding: 1rem;
 }
-.img-responsive{
-    width: 70rem;
+.img-responsive.img-round {
+  border: 1px solid black;
+  border-radius: 50%;
 }
-.img-responsive.img-round{
-    border: 1px solid black;
-    border-radius: 50%;
+
+@media screen and (min-width: 800px) {
+  .img-responsive {
+    width: 100rem;
+  }
 }
+@media screen and (max-width: 400px) {
+    .img-responsive {
+      width: 15rem;
+    }
+  }
+  @media screen and (max-width: 200px) {
+    .img-responsive {
+      width: 5rem;
+    }
+  }
