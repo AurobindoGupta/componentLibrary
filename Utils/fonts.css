@@ -4,3 +4,35 @@
     --primary-font: 'Bitter', serif;
     --heroTitle-font: 'Righteous', cursive;
 }
+/* -----------FONT WEIGHT--------------- */
+.fw-light{
+    font-weight: 300;
+}
+.fw-regular{
+    font-weight: 400;
+}
+.fw-semiBold{
+    font-weight: 600;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-heavyBold{
+    font-weight: 900;
+}
+/* -------------------FONT SIZE------------- */
+.fs-XS{
+    font-size: 0.5rem;
+}
+.fs-S{
+    font-size: 1rem;
+}
+.fs-M{
+    font-size: 1.5rem;
+}
+.fs-L{
+    font-size: 2rem;
+}
+.fs-XL{
+    font-size: 3rem;
+}
