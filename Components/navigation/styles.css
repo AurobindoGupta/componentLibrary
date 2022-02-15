@@ -10,7 +10,7 @@
   justify-content: space-between;
   background-color: var(--btnPrimaryBlue-color);
   border-radius: 0.2rem;
-  min-width: 580px;
+  min-width: 860px;
   color: var(--navbar-font-color);
 }
 .navbar-brand {
@@ -26,6 +26,8 @@
   width: 35%;
   border-radius: 1rem;
   background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
 }
 
 .searchBar:hover{
@@ -34,7 +36,7 @@
 .searchBar .searchBar-input {
   border: none;
   height: 2rem;
-  width: 84%;
+  width: 80%;
   padding: 0 0.5rem;
   border-radius: 1rem 0 0 1rem;
 }
