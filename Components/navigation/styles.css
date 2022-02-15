@@ -1,0 +1,70 @@
+@import url(/rootStyles.css);
+@import url(../avatar/styles.css);
+:root{
+
+    --navbar-font-color:var(--background-color)
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--btnPrimaryBlue-color);
+  border-radius: 0.2rem;
+  min-width: 580px;
+  color: var(--navbar-font-color);
+}
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
+}
+.navbar-brand .brandName {
+  font-size: 2rem;
+}
+.searchBar {
+  border: 1px solid black;
+  margin: 0.2rem;
+  width: 35%;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+}
+
+.searchBar:hover{
+    opacity: 0.9;
+}
+.searchBar .searchBar-input {
+  border: none;
+  height: 2rem;
+  width: 84%;
+  padding: 0 0.5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+.searchBar .searchBar-input:focus{
+    outline: none;
+}
+.searchBar .searchBar-btn {
+  border: none;
+  height: 2rem;
+  width: 10%;
+  border-radius: 0 1rem 1rem 0;
+  background: none;
+}
+.navLinks{
+    margin: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navLinks .navLinks-btn{
+    margin: 0.1rem;
+    height: 2rem;
+    padding: 0 0.2rem;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--background-color);
+}
+.navLinks .navLinks-btn:hover{
+    background:var(--background-color);
+    color: var(--btnPrimaryBlue-color);
+}
