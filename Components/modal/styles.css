@@ -1,0 +1,8 @@
+@import url(../button/styles.css);
+
+.modal-container{
+    display: none;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.3), -3px 0px 7px rgba(0, 0, 0, 0.3);
+}
