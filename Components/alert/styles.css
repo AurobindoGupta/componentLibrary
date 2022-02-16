@@ -33,6 +33,9 @@
   font-size: 2rem;
   cursor: pointer;
 }
+.closebtn:active{
+  transform: scale(0.98);
+}
 
 .alert.alert-success{
   background-color: var(--alertGreen-color);
@@ -56,4 +59,7 @@
 .alertContent{
   padding: 0 0.5rem ;
   text-align: left;
+}
+.closebtn.withText{
+ margin: -3% 0 0 0;
 }
