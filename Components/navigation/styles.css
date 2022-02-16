@@ -1,9 +1,8 @@
-@import url(/rootStyles.css);
 @import url(../avatar/styles.css);
-:root{
-
-    --navbar-font-color:var(--background-color)
+:root {
+  --navbar-font-color: var(--background-color);
 }
+
 .navbar-container {
   display: flex;
   align-items: center;
@@ -13,12 +12,25 @@
   min-width: 860px;
   color: var(--navbar-font-color);
 }
-.navbar-brand {
+.navLinks {
+  margin: 0.3rem;
+  width: 25%;
   display: flex;
-  align-items: flex-end;
+  justify-content: space-evenly;
 }
-.navbar-brand .brandName {
-  font-size: 2rem;
+.navLinks .navLinks-btn {
+  margin: 0.1rem;
+  height: 2rem;
+  padding: 0 0.2rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--background-color);
+}
+.navLinks .navLinks-btn:hover {
+  background: var(--background-color);
+  color: var(--btnPrimaryBlue-color);
 }
 .searchBar {
   border: 1px solid black;
@@ -30,8 +42,8 @@
   justify-content: space-between;
 }
 
-.searchBar:hover{
-    opacity: 0.9;
+.searchBar:hover {
+  opacity: 0.9;
 }
 .searchBar .searchBar-input {
   border: none;
@@ -40,8 +52,8 @@
   padding: 0 0.5rem;
   border-radius: 1rem 0 0 1rem;
 }
-.searchBar .searchBar-input:focus{
-    outline: none;
+.searchBar .searchBar-input:focus {
+  outline: none;
 }
 .searchBar .searchBar-btn {
   border: none;
@@ -50,23 +62,21 @@
   border-radius: 0 1rem 1rem 0;
   background: none;
 }
-.navLinks{
-    margin: 0.3rem;
-    width: 25%;
-    display: flex;
-    justify-content: space-evenly;
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
 }
-.navLinks .navLinks-btn{
-    margin: 0.1rem;
-    height: 2rem;
-    padding: 0 0.2rem;
-    background: none;
-    border: none;
+.navbar-brand .brandName {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 890px) {
+  .navbar-container {
+    background-color: red;
+    min-width: 500px;
+  }
+  .navLinks .navLinks-btn {
     border-radius: 0.5rem;
-    font-size: 1.5rem;
-    color: var(--background-color);
-}
-.navLinks .navLinks-btn:hover{
-    background:var(--background-color);
-    color: var(--btnPrimaryBlue-color);
+    font-size: 1rem;
+    width: 33%;
+  }
 }
