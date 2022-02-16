@@ -26,6 +26,7 @@
   background-color: var(--themeGrey-color);
   color: white;
   max-width: 20rem;
+  min-width: 15rem;
   text-align: center;
   overflow-wrap: break-word;
 }
