@@ -6,9 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Component library content - Alert " />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Alert</title>
   </head>
   <body>
-    <h1>ALERT</h1>
+    <div class="componentAlert">
+      <div class="group">
+        <div class="alertContainer">
+          <div class="alert">
+            This is a standard Alert.
+            <span class="closebtn">&times;</span>
+          </div>
+        </div>
+        <div class="alertContainer">
+          <div class="alert alert-success">
+            <i class="fa fa-check-circle"></i>
+            This is a Success Alert.
+            <span class="closebtn">&times; </span>
+          </div>
+        </div>
+        <div class="alertContainer">
+          <div class="alert alert-error">
+            <i class="fa fa-exclamation-circle"></i>
+            This is a Error Alert.
+            <span class="closebtn">&times;</span>
+          </div>
+        </div>
+        <div class="alertContainer">
+          <div class="alert alert-info">
+            <i class="fa fa-info-circle"></i>
+            This is a Information Alert.
+            <span class="closebtn">&times;</span>
+          </div>
+        </div>
+        <div class="alertContainer">
+          <div class="alert alert-warning">
+            <i class="fa fa-exclamation-circle"></i>
+            This is a Warning Alert.
+            <span class="closebtn">&times;</span>
+          </div>
+        </div>
+        <div class="alertContainer">
+          <div class="alert alert-warning withText">
+            <i class="fa fa-exclamation-circle icon"></i>
+            <div class="alertContent">
+              <p class="alertHeader fw-semiBold">This is a Warning Alert.</p>
+              <p class="alertText">
+                this is content this is content this is content this is content
+              </p>
+            </div>
+
+            <span class="closebtn withText">&times;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
