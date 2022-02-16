@@ -26,12 +26,16 @@
   background-color: var(--themeGrey-color);
   color: white;
   max-width: 20rem;
+  min-width: 15rem;
   text-align: center;
   overflow-wrap: break-word;
 }
 .closebtn {
   font-size: 2rem;
   cursor: pointer;
+}
+.closebtn:active{
+  transform: scale(0.98);
 }
 
 .alert.alert-success{
@@ -56,4 +60,7 @@
 .alertContent{
   padding: 0 0.5rem ;
   text-align: left;
+}
+.closebtn.withText{
+ margin: -3% 0 0 0;
 }
