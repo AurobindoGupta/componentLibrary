@@ -35,7 +35,7 @@
   border: 1px solid var(--primary-color);
   background: var(--baseRed-color);
   border-radius: 0.5rem;
-  color: white;
+  color: var(--themeWhite-color);
 }
 .fa.icon-close {
   position: absolute;
@@ -53,7 +53,7 @@
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
-  background: white;
+  background: var(--themeWhite-color);
 }
 .icon-badge:hover {
   color: var(--baseRed-color);
@@ -82,7 +82,7 @@
 .card-title.text-overlay {
   position: absolute;
   bottom: 0.1rem;
-  color: white;
+  color: var(--themeWhite-color);
 }
 .card.text-overlay {
   height: 400px;
