@@ -1,0 +1,27 @@
+@import url(../documentation.css);
+
+.componentExample.component-input {
+  width: fit-content;
+  padding: 0.2rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.inputContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.button-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.componentExample.component-input.textbox {
+  height: 8rem;
+}
+.componentExample.component-input .input-form {
+    padding: 0.5rem;
+  }

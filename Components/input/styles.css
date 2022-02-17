@@ -9,7 +9,7 @@
 }
 .input-space{
     border-radius: 0.3rem;
-    padding: 0.4rem;
+    padding: 0.2rem;
 }
 .input-error{
     border: 1px solid var(--baseRed-color);
