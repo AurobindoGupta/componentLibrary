@@ -4,11 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Aurobindo Gupta" />
-    <meta name="description" content="Component library content - Card " />
-    <title>Alert</title>
+    <meta name="description" content="CSS assignment card" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>cssAssignments</title>
   </head>
   <body>
-    <h1>ALERT</h1>
+    <div class="componentCard pd-1 mg-1">
+      <!-- standard Card -->
+      <div class="card">
+        <div class="card-img-container">
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img1.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with shadow -->
+      <div class="card card-shadow">
+        <div class="card-img-container">
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img1.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with pill badge -->
+      <div class="card">
+        <div class="card-img-container">
+          <p class="pill-badge">NEW</p>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with dismiss -->
+      <div class="card">
+        <div class="card-img-container">
+          <i class="fa fa-close icon-close"></i>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-title">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">Sub-title</p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- card with text overlay -->
+      <div class="card text-overlay">
+        <div class="card-img-container text-overlay">
+          <i class="fa fa-close icon-close"></i>
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+          <div class="card-title text-overlay">
+            <p class="title-heading">Nike Sneakers</p>
+            <p class="title-subHeading">Sub-title</p>
+            <div class="price">
+              <p class="current-price">Rs. 2500</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-button">
+          <button class="btn btn-primary button-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- text only card -->
+      <div class="card text-only">
+        <div class="card-title text-only">
+          <p class="title-heading">Nike Sneakers</p>
+          <p class="title-subHeading">
+            These are modern Top of the line sneakers, best al round type, can
+            be worn every where
+          </p>
+          <div class="price">
+            <p class="current-price">Rs. 2500</p>
+          </div>
+        </div>
+      </div>
+      <!-- horizontal card -->
+      <div class="card card-horizontal">
+        <div class="card-img-container card-horizontal">
+          <i class="fa fa-heart-o icon-badge"></i>
+          <img
+            class="card-img card-horizontal"
+            src="/Utils/images/card-img2.png"
+            alt="Card image"
+          />
+        </div>
+        <div class="card-details card-horizontal">
+          <div class="card-title card-horizontal">
+            <p class="title-heading">Nike Sneakers</p>
+            <p class="title-subHeading">Sub-title</p>
+            <div class="price">
+              <p class="current-price">Rs. 2500</p>
+            </div>
+          </div>
+          <div class="card-button card-horizontal">
+            <button class="btn btn-primary button-add card-horizontal">
+              Add to Cart
+            </button>
+            <button class="btn btn-secondary button-add card-horizontal">
+              Add to Wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
