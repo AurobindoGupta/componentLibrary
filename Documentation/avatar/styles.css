@@ -1,0 +1,21 @@
+@import url(../documentation.css);
+
+
+.componentExample.avatar-component {
+  width: 30rem;
+  height: 10rem;
+  border-radius: 2rem;
+}
+.avatarContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .avatar-set{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  }

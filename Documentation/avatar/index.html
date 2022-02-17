@@ -6,9 +6,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Component library content - Avatar " />
-    <title>Alert</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Avatar</title>
   </head>
   <body>
-    <h1>ALERT</h1>
+    <!-- ................BASE CONTAINER............. -->
+    <div class="baseContainer">
+      <!-- ................NAV BAR............. -->
+
+      <nav class="navBar">
+        <div class="heroContainer">
+          <img
+            src="/Utils/images/panda sulk2.jpg"
+            class="navbarHeroImg"
+            onclick="window.location.href='./Components/index.html'"
+          />
+          <p class="heroTitle">PandaUI</p>
+        </div>
+        <ul class="navLinks">
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='../../index.html'"
+          >
+            Home
+          </li>
+          <li
+            class="navLinksBtn if-active"
+            onclick="window.location.href='./Components/index.html'"
+          >
+            Docs
+          </li>
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
+          >
+            Github
+          </li>
+        </ul>
+      </nav>
+      <!-- ................NAV BAR............. -->
+      <!-- ................PAGE CONTENT ............................... -->
+
+      <div class="pageContent">
+        <div class="docsContent">
+          <!-- left Side Nav -->
+          <div class="leftNav">
+            <ul class="leftNav-btnList">
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/index.html'"
+              >
+                <a class="sideNav-btnLink">Installation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/alert/index.html'"
+              >
+                <a class="sideNav-btnLink">Alert</a>
+              </li>
+              <li
+                class="sideNav-btn active"
+                onclick="location.href='/Documentation/avatar/index.html'"
+              >
+                <a class="sideNav-btnLink">Avatar</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/badge/index.html'"
+              >
+                <a class="sideNav-btnLink">Badge</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/button/index.html'"
+              >
+                <a class="sideNav-btnLink">Button</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/card/index.html'"
+              >
+                <a class="sideNav-btnLink">Card</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/imgDoc/index.html'"
+              >
+                <a class="sideNav-btnLink">Image</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/input/index.html'"
+              >
+                <a class="sideNav-btnLink">Input</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/textUtils/index.html'"
+              >
+                <a class="sideNav-btnLink">Text Utilities</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/lists/index.html'"
+              >
+                <a class="sideNav-btnLink">Lists</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/navigation/index.html'"
+              >
+                <a class="sideNav-btnLink">Navigation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/modal/index.html'"
+              >
+                <a class="sideNav-btnLink">Modal</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/rating/index.html'"
+              >
+                <a class="sideNav-btnLink">Rating(eCommerse)</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/toast/index.html'"
+              >
+                <a class="sideNav-btnLink">Toast</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/grid/index.html'"
+              >
+                <a class="sideNav-btnLink">Simplified Grid</a>
+              </li>
+            </ul>
+          </div>
+          <!-- left Side Nav -->
+          <!-- main Content -->
+          <div class="mainContent">
+            <div class="doc-container pd-1">
+              <div class="doc-header">
+                <p class="doc-heading fs-L fw-semiBold">Avatar</p>
+                <hr />
+              </div>
+              <div class="doc-mainBody pd-1">
+                <p class="doc-content" id="alert">
+                  These are used to display user image ad profile pictures.
+                </p>
+                <p class="doc-content">
+                  We have
+                  <span class="fw-semiBold">Circle-Avatar</span>,
+                  <span class="fw-semiBold">Square-Acatar</span>, In 4 different
+                  sizes <span class="fw-semiBold">standard</span>,
+                  <span class="fw-semiBold">S</span>,
+                  <span class="fw-semiBold">XS</span>,
+                  <span class="fw-semiBold">L</span>.
+                </p>
+                <p class="mg-1 fw-semiBold">Square Avatars:</p>
+                <div class="componentExample avatar-component">
+                  <div class="avatarContainer square">
+                    <div class="avatar-set">
+                      <img
+                        class="avatar"
+                        src="../../Utils/images/avatar.png"
+                        alt="Avatar"
+                      />
+                      <p>Standard</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-S"
+                        src="../../Utils/images/avatar2.png"
+                        alt="Avatar"
+                      />
+                      <p>S</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-XS"
+                        src="../../Utils/images/avatar3.png"
+                        alt="Avatar"
+                      />
+                      <p>XS</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-L"
+                        src="../../Utils/images/avatar.png"
+                        alt="Avatar"
+                      />
+                      <p>L</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="mg-1 fw-semiBold">Round Avatars:</p>
+                <div class="componentExample avatar-component">
+                  <div class="avatarContainer round">
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-R"
+                        src="../../Utils/images/avatar2.png"
+                        alt="Avatar"
+                      />
+
+                      <p>Standard</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-S avatar-R"
+                        src="../../Utils/images/avatar3.png"
+                        alt="Avatar"
+                      />
+
+                      <p>S</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-XS avatar-R"
+                        src="../../Utils/images/avatar2.png"
+                        alt="Avatar"
+                      />
+
+                      <p>XS</p>
+                    </div>
+                    <div class="avatar-set">
+                      <img
+                        class="avatar avatar-L avatar-R"
+                        src="../../Utils/images/avatar.png"
+                        alt="Avatar"
+                      />
+                      <p>L</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet" id="code-snippet">
+                  <p class="fs-M fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below</p>
+                  <iframe
+                  class="doc-codeSnippet"
+                  src="https://carbon.now.sh/embed/ySnOLwk40cf2pfJ6WIYt"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main Content -->
+          <!-- Right Side Nav -->
+          <div class="rightNav">
+            <ul class="rightNav-btnList">
+              <li class="sideNav-btn">
+                <a href="#alert" class="sideNav-btnLink">Basic Info</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#code-snippet" class="sideNav-btnLink">Code</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ................PAGE CONTENT ............................... -->
+      <!-- ................FOOTER ............................... -->
+
+      <footer class="homeFooter">
+        <div class="footerContent">
+          <a href="https://github.com/AurobindoGupta" class="footerLinks">
+            <img src="/Utils/images/GitHub.png" title="Github" />
+            <p>GitHub</p></a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/aurobindo-gupta/"
+            class="footerLinks"
+          >
+            <img src="/Utils/images/linkdin.png" title="Linkedin" />
+            <p>Linkedin</p>
+          </a>
+        </div>
+      </footer>
+      <!-- ................FOOTER ............................... -->
+    </div>
+    <!-- ................BASE CONTAINER............. -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
