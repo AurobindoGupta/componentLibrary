@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
-    <meta name="description" content="Component library content - Input " />
+    <meta name="description" content="Component library content - Modal " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Input</title>
+    <title>Modal</title>
   </head>
   <body>
     <!-- ................BASE CONTAINER............. -->
@@ -95,7 +99,7 @@
                 <a class="sideNav-btnLink">Image</a>
               </li>
               <li
-                class="sideNav-btn active"
+                class="sideNav-btn"
                 onclick="location.href='/Documentation/input/index.html'"
               >
                 <a class="sideNav-btnLink">Input</a>
@@ -119,7 +123,7 @@
                 <a class="sideNav-btnLink">Navigation</a>
               </li>
               <li
-                class="sideNav-btn"
+                class="sideNav-btn active"
                 onclick="location.href='/Documentation/modal/index.html'"
               >
                 <a class="sideNav-btnLink">Modal</a>
@@ -149,98 +153,43 @@
           <div class="mainContent">
             <div class="doc-container pd-1">
               <div class="doc-header">
-                <p class="doc-heading fs-L fw-semiBold">Input</p>
+                <p class="doc-heading fs-L fw-semiBold">Modal</p>
                 <hr />
               </div>
               <div class="doc-mainBody pd-1">
                 <p class="doc-content" id="alert">
-                  These are the custom input styles available.
+                  These are like pop-ups which are positioned over everything
+                  else in the document.
                 </p>
                 <p class="doc-content">
-                  We have
-                  <span class="fw-semiBold">Standard input</span>,
-                  <span class="fw-semiBold">Input validation</span>,
-                  <span class="fw-semiBold">Input textbox</span>.
-          
+                  We have the
+                  <span class="fw-semiBold">Standard modal</span>
+                  design.
                 </p>
-                <p class="mg-1 fw-semiBold" id="standard">Standard Input:</p>
-                <div class="componentExample component-input">
-                  <div class="inputContainer">
-                    <div class="input-form">
-                      <p class="input-label">Name</p>
-                      <input type="text" placeholder="Jhon Doe" class="input-space" />
-                    </div>
+                <p class="mg-1 fw-semiBold" id="standard">Standard Modal:</p>
+                <button class="btn btn-primary openModal">Trigger</button>
+                    <div class="modal-container"></div>
+                <div class="componentExample component-modal">
+                    
+                  <div class="containerModal">
+                    <div class="modal-container"></div>
                   </div>
                 </div>
                 <div class="code-snippet">
                   <p class="fs-S fw-semiBold">Code</p>
                   <hr />
                   <p>You can use the classes defined as shown below.</p>
-                  <p>Code for Standard input:</p>
+                  <p>Code for Standard Modal:</p>
                   <iframe
                     class="doc-codeSnippet"
-                    src="https://carbon.now.sh/embed/F2fgd2eb4zUAusd2UAIn"
+                    src="https://carbon.now.sh/embed/KbREBXfPhyKEiisspRDL"
                     sandbox="allow-scripts allow-same-origin"
                   >
                   </iframe>
                 </div>
                 <hr />
                 <hr />
-                <p class="mg-1 fw-semiBold" id="validation">Input with Validation:</p>
-                <div class="componentExample component-input">
-                  <div class="inputContainer">
-                    <div class="input-form">
-                      <p class="input-label">Email*</p>
-                      <div class="input-with-error">
-                        <input type="email" placeholder="" class="input-space input-error" />
-                        <p class="error-msg">Error Message!!</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="code-snippet">
-                  <p class="fs-S fw-semiBold">Code</p>
-                  <hr />
-                  <p>You can use the classes defined as shown below.</p>
-                  <p>Code for Input with Validation:</p>
-                  <iframe
-                    class="doc-codeSnippet"
-                    src="https://carbon.now.sh/embed/UBMMIYYfM1uGaOn6YeVc"
-                    sandbox="allow-scripts allow-same-origin"
-                  >
-                  </iframe>
-                </div>
-                <hr />
-                <hr />
-                <p class="mg-1 fw-semiBold" id="textbox">Input textbox:</p>
-                <div class="componentExample component-input textbox">
-                  <div class="inputContainer">
-                    <div class="input-form textbox">
-                      <p class="input-label">Enter Text</p>
-                      <textarea
-                        type="text"
-                        placeholder="Enter text here....."
-                        class="input-space textbox"
-                        rows="3"
-                        cols="1"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="code-snippet">
-                  <p class="fs-S fw-semiBold">Code</p>
-                  <hr />
-                  <p>You can use the classes defined as shown below.</p>
-                  <p>Code for Input textbox:</p>
-                  <iframe
-                    class="doc-codeSnippet"
-                    src="https://carbon.now.sh/embed/8Az6aIA2qig0A9tbq4hc"
-                    sandbox="allow-scripts allow-same-origin"
-                  >
-                  </iframe>
-                </div>
-                <hr />
-                <hr />
+                
               </div>
             </div>
           </div>
@@ -249,13 +198,7 @@
           <div class="rightNav">
             <ul class="rightNav-btnList">
               <li class="sideNav-btn">
-                <a href="#standard" class="sideNav-btnLink">Standard</a>
-              </li>
-              <li class="sideNav-btn">
-                <a href="#validation" class="sideNav-btnLink">validation</a>
-              </li>
-              <li class="sideNav-btn">
-                <a href="#textbox" class="sideNav-btnLink">TextBox</a>
+                <a href="#standard" class="sideNav-btnLink">Basic Info</a>
               </li>
             </ul>
           </div>
@@ -283,5 +226,6 @@
       <!-- ................FOOTER ............................... -->
     </div>
     <!-- ................BASE CONTAINER............. -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

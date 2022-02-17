@@ -7,6 +7,7 @@
 @import url(imgComponent/styles.css);
 @import url(input/styles.css);
 @import url(lists/styles.css);
+@import url(modal/styles.css);
 @import url(navigation/styles.css);
 @import url(textUtils/styles.css);
 @import url(toast_notify_snackbar/styles.css);
