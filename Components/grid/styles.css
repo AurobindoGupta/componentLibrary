@@ -1,0 +1,12 @@
+@import url(/rootStyles.css);
+
+.grid1{
+    display: flex;
+}
+.grid2{
+    display: flex;
+}
+.grid1-1, .grid1-2, .grid2-1, .grid2-2, .grid2-3{
+    flex-grow: 1;
+    border: 1px solid black;
+}
