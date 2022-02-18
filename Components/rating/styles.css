@@ -1,0 +1,48 @@
+@import url(/rootStyles.css);
+
+.rating-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: fit-content;
+}
+
+
+.star {
+  font-size: 2rem;
+  color: var(--background-color);
+  appearance: none;
+}
+.r1,
+.r2,
+.r3,
+.r4,
+.r5 {
+    color: var(--themeGrey-color);
+}
+.r1:hover,
+.r2:hover,
+.r3:hover,
+.r4:hover,
+.r5:hover {
+  color: var(--alertOrange-color);
+}
+
+.r1:hover ~ .star,
+.r2:hover ~ .star,
+.r3:hover ~ .star,
+.r4:hover ~ .star,
+.r5:hover ~ .star {
+  color: var(--alertOrange-color);
+}
+.r1:checked ~ .star,
+.r1:checked,
+.r2:checked ~ .star,
+.r2:checked,
+.r3:checked ~ .star,
+.r3:checked,
+.r5:checked ~ .star,
+.r4:checked,
+.r4:checked ~ .star,
+.r5:checked {
+  color: var(--alertOrange-color);
+}
