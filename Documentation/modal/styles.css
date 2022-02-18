@@ -16,5 +16,5 @@
 .containerModal .modal-container {
   display: block;
   position: static;
-  background-color: var(--secondary-color);
+  background-color: var(--themeBright-color);
 }
