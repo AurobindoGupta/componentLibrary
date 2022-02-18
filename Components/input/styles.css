@@ -1,0 +1,39 @@
+@import url(/rootStyles.css);
+
+.input-form{
+    display: flex;
+    padding: 2rem;
+}
+.input-label{
+    padding: 0 1rem;
+}
+.input-space{
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+}
+.input-error{
+    border: 1px solid var(--baseRed-color);
+}
+.error-msg{
+    color: var(--baseRed-color);
+}
+.input-form.textbox{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.input-space.textbox{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.input-form.full-form{
+    display: flex;
+    flex-direction: column;
+}
+.input-space.full-form{
+    margin:0 1rem;
+}
+.form-container{
+    width: 400px;
+    height: 500px;
+}
