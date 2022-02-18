@@ -2,9 +2,11 @@
 
 .grid1{
     display: flex;
+    width: 100%;
 }
 .grid2{
     display: flex;
+    width: 100%;
 }
 .grid1-1, .grid1-2, .grid2-1, .grid2-2, .grid2-3{
     flex-grow: 1;
