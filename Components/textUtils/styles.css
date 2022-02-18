@@ -1,0 +1,39 @@
+@import url(/rootStyles.css);
+.componentTextUtils{
+ width: 500px;
+}
+.text-h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.text-h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.text-h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.text-h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.text-h5 {
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.text-strike{
+    text-decoration: line-through;
+}
+.text-grey{
+    color: var(--themeGrey-color);
+}
+.text-align-centre{
+    text-align: center;
+}
+.text-bold{
+    font-weight: 600;
+}
+.text-small{
+    font-size: 0.7rem;
+}

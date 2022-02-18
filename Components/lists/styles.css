@@ -1,0 +1,79 @@
+@import url(/rootStyles.css);
+
+.list-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.list-roman {
+  list-style-type: upper-roman;
+}
+.list-abc {
+  list-style-type: lower-alpha;
+}
+.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.list-none {
+  list-style: none;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-circle {
+  list-style-type: circle;
+}
+.notification-window {
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  display: flex;
+  flex-direction: column;
+}
+.line-break {
+  border: 1px solid var(--primary-color);
+}
+.notification-header {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.closeBtn {
+  width: 2rem;
+  height: 2rem;
+  color: var(--alertRed-color);
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+.closeBtn:hover {
+  color: white;
+  background: var(--alertRed-color);
+}
+.notification-content {
+  flex-grow: 25;
+}
+.notification-footer {
+  flex-grow: 1;
+  text-align: center;
+}
+.notification-content .list-point {
+  padding: 0.2rem;
+}
+.notification-content .list-square {
+  list-style-position: inside;
+}
+.notification-content .list-point-header {
+  font-weight: 5500;
+}
+.notification-content .list-point-content {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--themeGrey-color);
+}
