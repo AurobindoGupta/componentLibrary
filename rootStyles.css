@@ -23,7 +23,7 @@
 }
 .navLinksBtn.if-active {
   background: var(--themeBright-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 0.5rem;
   border: 0.1rem solid black;
   pointer-events: none;
@@ -60,7 +60,7 @@
   list-style-type: none;
 }
 .navLinksBtn {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 .pageContent {
   padding: 1rem;
