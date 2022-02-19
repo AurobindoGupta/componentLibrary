@@ -1,7 +1,7 @@
 # componentLibrary
 This is a personalized component library
 
-##Components present
+## Components present
  *Avatar
  *Alert
  *Badge
