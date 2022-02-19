@@ -3,10 +3,14 @@
 @import url(badge/badgeOnAvatar/styles.css);
 @import url(badge/badgeOnIcon/styles.css);
 @import url(button/styles.css);
-@import url(card/mystyles.css);
+@import url(card/mystyle.css);
 @import url(imgComponent/styles.css);
 @import url(input/styles.css);
 @import url(lists/styles.css);
+@import url(modal/styles.css);
 @import url(navigation/styles.css);
 @import url(textUtils/styles.css);
 @import url(toast/styles.css);
+@import url(rating/styles.css);
+@import url(grid/styles.css);
+

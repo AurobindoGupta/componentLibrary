@@ -1,0 +1,15 @@
+
+.componentExample.component-list {
+  width: 80%;
+  padding: 0.2rem;
+  height: fit-content;
+  border-radius: 1rem;
+  margin: auto;
+}
+.container-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}

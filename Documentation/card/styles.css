@@ -1,0 +1,27 @@
+
+
+.componentExample.component-card {
+  width: fit-content;
+  padding: 0.5rem;
+  height: 35rem;
+  border-radius: 1rem;
+}
+.cardContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.componentExample.component-card.text-only {
+  width: fit-content;
+  padding: 0.5rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+.componentExample.component-card.x-card {
+  margin: 1% 5%;
+  width: fit-content;
+  padding: 0.5rem;
+  height: 30rem;
+  border-radius: 1rem;
+}

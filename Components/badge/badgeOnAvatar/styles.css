@@ -1,5 +1,4 @@
-@import url(/rootStyles.css);
-@import url(../../avatar/styles.css);
+
 
 .componentAvatarBadge {
   display: flex;

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aurobindo Gupta" />
+    <meta name="description" content="Component library content - Lists " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/Documentation/documentation.css" />
+    <link rel="stylesheet" href="/rootStyles.css" />
+    <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lists</title>
+  </head>
+  <body>
+    <!-- ................BASE CONTAINER............. -->
+    <div class="baseContainer">
+      <!-- ................NAV BAR............. -->
+
+      <nav class="navBar">
+        <div class="heroContainer">
+          <img
+            src="/Utils/images/panda sulk2.jpg"
+            class="navbarHeroImg"
+            onclick="window.location.href='./Components/index.html'"
+          />
+          <p class="heroTitle">PandaUI</p>
+        </div>
+        <ul class="navLinks">
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='../../index.html'"
+          >
+            Home
+          </li>
+          <li
+            class="navLinksBtn if-active"
+            onclick="window.location.href='./Components/index.html'"
+          >
+            Docs
+          </li>
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
+          >
+            Github
+          </li>
+        </ul>
+      </nav>
+      <!-- ................NAV BAR............. -->
+      <!-- ................PAGE CONTENT ............................... -->
+
+      <div class="pageContent">
+        <div class="docsContent">
+          <!-- left Side Nav -->
+          <div class="leftNav">
+            <ul class="leftNav-btnList">
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/index.html'"
+              >
+                <a class="sideNav-btnLink">Installation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/alert/index.html'"
+              >
+                <a class="sideNav-btnLink">Alert</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/avatar/index.html'"
+              >
+                <a class="sideNav-btnLink">Avatar</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/badge/index.html'"
+              >
+                <a class="sideNav-btnLink">Badge</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/button/index.html'"
+              >
+                <a class="sideNav-btnLink">Button</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/card/index.html'"
+              >
+                <a class="sideNav-btnLink">Card</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/imgDoc/index.html'"
+              >
+                <a class="sideNav-btnLink">Image</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/input/index.html'"
+              >
+                <a class="sideNav-btnLink">Input</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/textUtils/index.html'"
+              >
+                <a class="sideNav-btnLink">Text Utilities</a>
+              </li>
+              <li
+                class="sideNav-btn active"
+                onclick="location.href='/Documentation/lists/index.html'"
+              >
+                <a class="sideNav-btnLink">Lists</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/navigation/index.html'"
+              >
+                <a class="sideNav-btnLink">Navigation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/modal/index.html'"
+              >
+                <a class="sideNav-btnLink">Modal</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/rating/index.html'"
+              >
+                <a class="sideNav-btnLink">Rating(eCommerse)</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/toast/index.html'"
+              >
+                <a class="sideNav-btnLink">Toast</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/grid/index.html'"
+              >
+                <a class="sideNav-btnLink">Simplified Grid</a>
+              </li>
+            </ul>
+          </div>
+          <!-- left Side Nav -->
+          <!-- main Content -->
+          <div class="mainContent">
+            <div class="doc-container pd-1">
+              <div class="doc-header">
+                <p class="doc-heading fs-L fw-semiBold">Lists</p>
+                <hr />
+              </div>
+              <div class="doc-mainBody pd-1">
+                <p class="doc-content" id="alert">
+                  These are the different List variations we provide.
+                </p>
+                <p class="doc-content"></p>
+                <p class="mg-1 fw-semiBold" id="ol">Ordered List:</p>
+                <div class="componentExample component-list">
+                  <div class="container-list">
+                    <div class="list-container">
+                      <ol class="list-ordered">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ol>
+                      <ol class="list-ordered reverse" reversed>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ol>
+                      <ol class="list-roman">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ol>
+                      <ol class="list-abc">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/5WX5S6FhIP7yK24zGwQL"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="ul">Unordered List:</p>
+                <div class="componentExample component-list">
+                  <div class="container-list">
+                    <div class="list-container">
+                      <ul class="list-unordered">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ul>
+                      <ul class="list-none reverse">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ul>
+                      <ul class="list-circle">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ul>
+                      <ul class="list-square">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/PXwbqqT68hjjvAuWkzwZ"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="notification">Notification:</p>
+                <div class="componentExample component-list">
+                  <div class="container-list">
+                    <div class="notification-container">
+                      <div class="notification-window">
+                        <div class="notification-header">
+                          <p class="notification-title">Notifications</p>
+                          <button class="closeBtn">
+                            <p class="icon-close">&times;</p>
+                          </button>
+                        </div>
+                        <hr class="line-break" />
+                        <div class="notification-content">
+                          <ul class="list-none">
+                            <li class="list-point">
+                              <div class="list-point-group">
+                                <p class="list-point-header">Notification 1</p>
+                                <p class="list-point-content">
+                                  this is notification content
+                                </p>
+                              </div>
+                            </li>
+                            <hr class="line-break" />
+                            <li class="list-point">
+                              <div class="list-point-group">
+                                <p class="list-point-header">Notification 2</p>
+                                <p class="list-point-content">
+                                  this is notification content
+                                </p>
+                              </div>
+                            </li>
+                            <hr class="line-break" />
+                            <li class="list-point">
+                              <div class="list-point-group">
+                                <p class="list-point-header">Notification 3</p>
+                                <p class="list-point-content">
+                                  this is notification content
+                                </p>
+                              </div>
+                            </li>
+                            <hr class="line-break" />
+                          </ul>
+                        </div>
+                        <div class="notification-footer">
+                          Notification Footer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/7CsPqFWRUOrPg7a1vt5u"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!-- main Content -->
+          <!-- Right Side Nav -->
+          <div class="rightNav">
+            <ul class="rightNav-btnList">
+              <li class="sideNav-btn">
+                <a href="#ol" class="sideNav-btnLink">Ordered</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#ul" class="sideNav-btnLink">Unordered</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#notification" class="sideNav-btnLink">Notification</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ................PAGE CONTENT ............................... -->
+      <!-- ................FOOTER ............................... -->
+
+      <footer class="homeFooter">
+        <div class="footerContent">
+          <a href="https://github.com/AurobindoGupta" class="footerLinks">
+            <img src="/Utils/images/GitHub.png" title="Github" />
+            <p>GitHub</p></a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/aurobindo-gupta/"
+            class="footerLinks"
+          >
+            <img src="/Utils/images/linkdin.png" title="Linkedin" />
+            <p>Linkedin</p>
+          </a>
+        </div>
+      </footer>
+      <!-- ................FOOTER ............................... -->
+    </div>
+    <!-- ................BASE CONTAINER............. -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

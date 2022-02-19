@@ -6,9 +6,517 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Component library content - Card " />
-    <title>Alert</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/Documentation/documentation.css" />
+    <link rel="stylesheet" href="/rootStyles.css" />
+    <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Card</title>
   </head>
   <body>
-    <h1>ALERT</h1>
+    <!-- ................BASE CONTAINER............. -->
+    <div class="baseContainer">
+      <!-- ................NAV BAR............. -->
+
+      <nav class="navBar">
+        <div class="heroContainer">
+          <img
+            src="/Utils/images/panda sulk2.jpg"
+            class="navbarHeroImg"
+            onclick="window.location.href='./Components/index.html'"
+          />
+          <p class="heroTitle">PandaUI</p>
+        </div>
+        <ul class="navLinks">
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='../../index.html'"
+          >
+            Home
+          </li>
+          <li
+            class="navLinksBtn if-active"
+            onclick="window.location.href='./Components/index.html'"
+          >
+            Docs
+          </li>
+          <li
+            class="navLinksBtn"
+            onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
+          >
+            Github
+          </li>
+        </ul>
+      </nav>
+      <!-- ................NAV BAR............. -->
+      <!-- ................PAGE CONTENT ............................... -->
+
+      <div class="pageContent">
+        <div class="docsContent">
+          <!-- left Side Nav -->
+          <div class="leftNav">
+            <ul class="leftNav-btnList">
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/index.html'"
+              >
+                <a class="sideNav-btnLink">Installation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/alert/index.html'"
+              >
+                <a class="sideNav-btnLink">Alert</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/avatar/index.html'"
+              >
+                <a class="sideNav-btnLink">Avatar</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/badge/index.html'"
+              >
+                <a class="sideNav-btnLink">Badge</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/button/index.html'"
+              >
+                <a class="sideNav-btnLink">Button</a>
+              </li>
+              <li
+                class="sideNav-btn active"
+                onclick="location.href='/Documentation/card/index.html'"
+              >
+                <a class="sideNav-btnLink">Card</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/imgDoc/index.html'"
+              >
+                <a class="sideNav-btnLink">Image</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/input/index.html'"
+              >
+                <a class="sideNav-btnLink">Input</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/textUtils/index.html'"
+              >
+                <a class="sideNav-btnLink">Text Utilities</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/lists/index.html'"
+              >
+                <a class="sideNav-btnLink">Lists</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/navigation/index.html'"
+              >
+                <a class="sideNav-btnLink">Navigation</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/modal/index.html'"
+              >
+                <a class="sideNav-btnLink">Modal</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/rating/index.html'"
+              >
+                <a class="sideNav-btnLink">Rating(eCommerse)</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/toast/index.html'"
+              >
+                <a class="sideNav-btnLink">Toast</a>
+              </li>
+              <li
+                class="sideNav-btn"
+                onclick="location.href='/Documentation/grid/index.html'"
+              >
+                <a class="sideNav-btnLink">Simplified Grid</a>
+              </li>
+            </ul>
+          </div>
+          <!-- left Side Nav -->
+          <!-- main Content -->
+          <div class="mainContent">
+            <div class="doc-container pd-1">
+              <div class="doc-header">
+                <p class="doc-heading fs-L fw-semiBold">Card</p>
+                <hr />
+              </div>
+              <div class="doc-mainBody pd-1">
+                <p class="doc-content" id="alert">
+                  These are the custom card styles available, which can be used
+                  in ecommerce websites.
+                </p>
+                <p class="doc-content">
+                  We have
+                  <span class="fw-semiBold">Standard card</span>,
+                  <span class="fw-semiBold">Card with shadow</span>,
+                  <span class="fw-semiBold">Card with badge</span>,
+                  <span class="fw-semiBold">Card with dismiss</span>,
+                  <span class="fw-semiBold">Card with text overlay</span>,
+                  <span class="fw-semiBold">Text only card</span>,
+                  <span class="fw-semiBold">Horizontal card</span>.
+                </p>
+                <p class="mg-1 fw-semiBold" id="standard">Standard card:</p>
+                <div class="componentExample component-card">
+                  <div class="cardContainer">
+                    <div class="card">
+                      <div class="card-img-container">
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img"
+                          src="/Utils/images/card-img1.png"
+                          alt="Card image"
+                        />
+                      </div>
+                      <div class="card-title">
+                        <p class="title-heading">Nike Sneakers</p>
+                        <p class="title-subHeading">Sub-title</p>
+                        <div class="price">
+                          <p class="current-price">Rs. 2500</p>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <button class="btn btn-primary button-add">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Standard card:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/3dPvu0VkjGcQAxzv1G2U"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="shadow">Card with shadow:</p>
+                <div class="componentExample component-card">
+                  <div class="cardContainer">
+                    <div class="card card-shadow">
+                      <div class="card-img-container">
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img"
+                          src="/Utils/images/card-img1.png"
+                          alt="Card image"
+                        />
+                      </div>
+                      <div class="card-title">
+                        <p class="title-heading">Nike Sneakers</p>
+                        <p class="title-subHeading">Sub-title</p>
+                        <div class="price">
+                          <p class="current-price">Rs. 2500</p>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <button class="btn btn-primary button-add">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Card with shadow:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/Tf8whRjo0Qo3ZEc7om3D"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="badge">Card with badge:</p>
+                <div class="componentExample component-card">
+                  <div class="cardContainer">
+                    <div class="card">
+                      <div class="card-img-container">
+                        <p class="pill-badge">NEW</p>
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img"
+                          src="/Utils/images/card-img2.png"
+                          alt="Card image"
+                        />
+                      </div>
+                      <div class="card-title">
+                        <p class="title-heading">Nike Sneakers</p>
+                        <p class="title-subHeading">Sub-title</p>
+                        <div class="price">
+                          <p class="current-price">Rs. 2500</p>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <button class="btn btn-primary button-add">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Card with badge:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/2KVffX3I8s3QjUQgMGaN"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="dismiss">Card with dismiss:</p>
+                <div class="componentExample component-card">
+                  <div class="cardContainer">
+                    <div class="card">
+                      <div class="card-img-container">
+                        <i class="fa fa-close icon-close"></i>
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img"
+                          src="/Utils/images/card-img2.png"
+                          alt="Card image"
+                        />
+                      </div>
+                      <div class="card-title">
+                        <p class="title-heading">Nike Sneakers</p>
+                        <p class="title-subHeading">Sub-title</p>
+                        <div class="price">
+                          <p class="current-price">Rs. 2500</p>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <button class="btn btn-primary button-add">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Card with dismiss:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/iTXvaKYNZK9OlBMfUNi0"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="overlay">Card with text overlay:</p>
+                <div class="componentExample component-card">
+                  <div class="cardContainer">
+                    <div class="card text-overlay">
+                      <div class="card-img-container text-overlay">
+                        <i class="fa fa-close icon-close"></i>
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img"
+                          src="/Utils/images/card-img2.png"
+                          alt="Card image"
+                        />
+                        <div class="card-title text-overlay">
+                          <p class="title-heading">Nike Sneakers</p>
+                          <p class="title-subHeading">Sub-title</p>
+                          <div class="price">
+                            <p class="current-price">Rs. 2500</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <button class="btn btn-primary button-add">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Card with text overlay:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/SnaQdb4hrAw3sIp7JQTW"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold" id="text">Text only card:</p>
+                <div class="componentExample component-card text-only">
+                  <div class="cardContainer">
+                    <div class="card text-only">
+                      <div class="card-title text-only">
+                        <p class="title-heading">Nike Sneakers</p>
+                        <p class="title-subHeading">
+                          These are modern Top of the line sneakers, best al
+                          round type, can be worn every where
+                        </p>
+                        <div class="price">
+                          <p class="current-price">Rs. 2500</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Card with text only:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/xNC8v0cYxmwcNYGVGrPT"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+                <p class="mg-1 fw-semiBold">Horizontal card:</p>
+                <div class="componentExample component-card x-card">
+                  <div class="cardContainer">
+                    <div class="card card-horizontal">
+                      <div class="card-img-container card-horizontal">
+                        <i class="fa fa-heart-o icon-badge"></i>
+                        <img
+                          class="card-img card-horizontal"
+                          src="/Utils/images/card-img2.png"
+                          alt="Card image"
+                        />
+                      </div>
+                      <div class="card-details card-horizontal">
+                        <div class="card-title card-horizontal">
+                          <p class="title-heading">Nike Sneakers</p>
+                          <p class="title-subHeading">Sub-title</p>
+                          <div class="price">
+                            <p class="current-price">Rs. 2500</p>
+                          </div>
+                        </div>
+                        <div class="card-button card-horizontal">
+                          <button
+                            class="btn btn-primary button-add card-horizontal"
+                          >
+                            Add to Cart
+                          </button>
+                          <button
+                            class="btn btn-secondary button-add card-horizontal"
+                          >
+                            Add to Wishlist
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-snippet" id="horizontal">
+                  <p class="fs-S fw-semiBold">Code</p>
+                  <hr />
+                  <p>You can use the classes defined as shown below.</p>
+                  <p>Code for Horizontal card:</p>
+                  <iframe
+                    class="doc-codeSnippet"
+                    src="https://carbon.now.sh/embed/7vVa4HQGTX42oHEaFGSz"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </div>
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!-- main Content -->
+          <!-- Right Side Nav -->
+          <div class="rightNav">
+            <ul class="rightNav-btnList">
+              <li class="sideNav-btn">
+                <a href="#standard" class="sideNav-btnLink">Standard</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#shadow" class="sideNav-btnLink">Shadow</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#badge" class="sideNav-btnLink">Card with badge</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#dismiss" class="sideNav-btnLink">Dismiss</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#overlay" class="sideNav-btnLink">Overlay</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#text" class="sideNav-btnLink">Text only</a>
+              </li>
+              <li class="sideNav-btn">
+                <a href="#horizontal" class="sideNav-btnLink">Horizontal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ................PAGE CONTENT ............................... -->
+      <!-- ................FOOTER ............................... -->
+
+      <footer class="homeFooter">
+        <div class="footerContent">
+          <a href="https://github.com/AurobindoGupta" class="footerLinks">
+            <img src="/Utils/images/GitHub.png" title="Github" />
+            <p>GitHub</p></a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/aurobindo-gupta/"
+            class="footerLinks"
+          >
+            <img src="/Utils/images/linkdin.png" title="Linkedin" />
+            <p>Linkedin</p>
+          </a>
+        </div>
+      </footer>
+      <!-- ................FOOTER ............................... -->
+    </div>
+    <!-- ................BASE CONTAINER............. -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
