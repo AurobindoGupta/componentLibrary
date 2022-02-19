@@ -71,7 +71,7 @@
 }
 @media only screen and (max-width: 890px) {
   .navbar-container {
-    background-color: red;
+    background-color: var(--baseRed-color);
     min-width: 500px;
   }
   .navLinks .navLinks-btn {
