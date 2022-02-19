@@ -1,5 +1,3 @@
-@import url(/rootStyles.css);
-
 .componentAvatar {
   display: flex;
   flex-direction: column;

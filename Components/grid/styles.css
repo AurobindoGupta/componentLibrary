@@ -1,4 +1,4 @@
-@import url(/rootStyles.css);
+
 
 .grid1{
     display: flex;
@@ -9,6 +9,7 @@
     width: 100%;
 }
 .grid1-1, .grid1-2, .grid2-1, .grid2-2, .grid2-3{
+    padding: 0.5rem;
     flex-grow: 1;
     border: 1px solid black;
 }

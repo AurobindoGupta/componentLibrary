@@ -1,5 +1,3 @@
-@import url(/rootStyles.css);
-@import url(/Components/components.css);
 
 .componentCard {
   display: flex;
@@ -73,10 +71,12 @@
 }
 .card-button {
   width: 100%;
+  overflow: hidden;
 }
 .button-add {
   width: 100%;
   font-size: 1.5rem;
+  padding: 0.3rem 2rem;
   font-weight: 600;
 }
 .card-title.text-overlay {

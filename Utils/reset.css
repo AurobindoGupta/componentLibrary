@@ -13,9 +13,7 @@ body {
   font-family: var(--primary-font);
   color: var(--primaryText-color);
 }
-body {
-  /* line-height: 1.5; */
-}
+
 img,
 picture,
 svg {

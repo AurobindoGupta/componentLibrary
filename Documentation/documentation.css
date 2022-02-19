@@ -1,5 +1,3 @@
-@import url(../rootStyles.css);
-@import url(/Components/components.css);
 .docsContent {
   display: flex;
   height: 100%;

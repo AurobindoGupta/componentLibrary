@@ -1,8 +1,7 @@
-@import url(../documentation.css);
 
 .componentExample.component-nav {
   width: fit-content;
-  padding: 0.2rem;
+  padding: 0.5rem;
   height: fit-content;
   border-radius: 1rem;
   margin: auto;
