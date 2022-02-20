@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.group {
+.group-alert {
   display: flex;
   position: absolute;
   flex-direction: column;
