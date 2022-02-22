@@ -60,7 +60,7 @@
 .componentExample {
   border: 1px solid var(--primary-color);
   width: fit-content;
-  margin: 3% 25%;
+  margin: 3% auto;
 }
 .doc-link {
   text-decoration: underline;
