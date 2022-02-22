@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aurobindo Gupta" />
     <meta name="description" content="Component library content - Input " />
+    <link rel="icon" type="image/x-icon" href="Utils/images/iconpanda16.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/Documentation/documentation.css" />
-    <link rel="stylesheet" href="/rootStyles.css" />
     <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="/rootStyles.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Input</title>
   </head>
@@ -22,28 +27,31 @@
           <img
             src="/Utils/images/panda sulk2.jpg"
             class="navbarHeroImg"
-            onclick="window.location.href='./Components/index.html'"
+            onclick="window.location.href='/index.html'"
           />
           <p class="heroTitle">PandaUI</p>
         </div>
         <ul class="navLinks">
           <li
-            class="navLinksBtn"
+            class="navLinksBtn menu-btn"
             onclick="window.location.href='../../index.html'"
           >
             Home
           </li>
           <li
-            class="navLinksBtn if-active"
+            class="navLinksBtn if-active menu-btn"
             onclick="window.location.href='./Components/index.html'"
           >
             Docs
           </li>
           <li
-            class="navLinksBtn"
+            class="navLinksBtn menu-btn"
             onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
           >
             Github
+          </li>
+          <li class="navLinksBtn ham">
+            <i class="fa fa-bars ham-nav-icon"></i>
           </li>
         </ul>
       </nav>
@@ -263,6 +271,71 @@
             </ul>
           </div>
         </div>
+        <div class="ham-nav">
+          <ul class="navLinks-ham">
+            <li class="navLinksBtn" onclick="window.location.href='/'">
+              Home
+            </li>
+            <li
+              class="navLinksBtn if-active"
+              onclick="window.location.href='./Documentation/index.html'"
+            >
+              Docs
+            </li>
+            <li
+              class="navLinksBtn"
+              onclick="window.location.href='https://github.com/AurobindoGupta/componentLibrary'"
+            >
+              Github
+            </li>
+            <hr/>
+            <hr/>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/index.html'">
+              <a class="sideNav-btnLink">Installation</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/alert/index.html'">
+              <a class="sideNav-btnLink">Alert</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/avatar/index.html'">
+              <a class="sideNav-btnLink">Avatar</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/badge/index.html'">
+              <a class="sideNav-btnLink">Badge</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/button/index.html'">
+              <a class="sideNav-btnLink">Button</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/card/index.html'">
+              <a class="sideNav-btnLink">Card</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/imgDoc/index.html'">
+              <a class="sideNav-btnLink">Image</a>
+            </li>
+            <li class="sideNav-btn active" onclick="location.href='/Documentation/input/index.html'">
+              <a class="sideNav-btnLink">Input</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/textUtils/index.html'">
+              <a class="sideNav-btnLink">Text Utilities</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/lists/index.html'">
+              <a class="sideNav-btnLink">Lists</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/navigation/index.html'">
+              <a class="sideNav-btnLink">Navigation</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/modal/index.html'">
+              <a class="sideNav-btnLink">Modal</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/rating/index.html'">
+              <a class="sideNav-btnLink">Rating(eCommerse)</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/toast/index.html'">
+              <a class="sideNav-btnLink">Toast</a>
+            </li>
+            <li class="sideNav-btn" onclick="location.href='/Documentation/grid/index.html'">
+              <a class="sideNav-btnLink">Simplified Grid</a>
+            </li>
+        </div>
       </div>
       <!-- ................PAGE CONTENT ............................... -->
       <!-- ................FOOTER ............................... -->
@@ -286,5 +359,7 @@
       <!-- ................FOOTER ............................... -->
     </div>
     <!-- ................BASE CONTAINER............. -->
+    <script type="text/javascript" src="/script.js"></script>
+
   </body>
 </html>
