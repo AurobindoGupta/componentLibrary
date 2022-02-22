@@ -5,6 +5,7 @@
   height: fit-content;
   border-radius: 1rem;
   margin: auto;
+  overflow: scroll;
 }
 .container-text {
   width: 100%;
