@@ -59,28 +59,32 @@
   display: flex;
   align-items: center;
   list-style-type: none;
+  width: fit-content;
 }
 .navLinksBtn {
   padding: 0.5rem 1rem;
 }
+
 .pageContent {
   padding: 1rem;
   display: flex;
-  height: 80%;
+  min-height: 70%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   flex: 1 0 auto;
 }
 .landingPageContent_images {
   display: flex;
+  width: 100%;
 }
 .landingPage_Img1 {
-  max-width: 40rem;
+  max-width: 60%;
   padding: 0.5rem;
 }
 .landingPage_Img2 {
-  max-width: 30rem;
+  max-width: 30%;
   max-height: 20rem;
   padding: 0.5rem;
 }
@@ -116,7 +120,7 @@
 .footerLinks {
   display: flex;
   padding: 1rem;
-  opacity: 1.0;
+  opacity: 1;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -127,3 +131,46 @@
 .footerLinks img {
   width: 25px;
 }
+.ham {
+  display: none;
+}
+.ham-nav{
+  display: none;
+  width: 30%;
+  height: fit-content;
+  background: var(--navbar-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  position: absolute;
+  right: 0.2rem;
+  top: 0;
+}
+.navLinks-ham{
+  list-style: none;
+  text-align: center;
+}
+.open-ham{
+  display: block;
+}
+
+@media screen and(max-width:950px) {
+  .landingPageContent_images {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .leftNav{
+    display: none;
+  }
+}
+@media screen and (min-width:850px){
+  .ham-nav{
+    display: none;
+  }
+}
+

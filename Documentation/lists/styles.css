@@ -1,6 +1,6 @@
 
 .componentExample.component-list {
-  width: 80%;
+  width: fit-content;
   padding: 0.2rem;
   height: fit-content;
   border-radius: 1rem;
