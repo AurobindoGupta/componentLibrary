@@ -1,5 +1,8 @@
 # componentLibrary
-This is a personalized component library
+This is a personalized component library. To import entire component library please use.
+```HTML
+    <link rel="stylesheet" href="https://panda-ui-neog.netlify.app/rootStyles.css"/>
+```
 
 ## Components present
  * [Avatar](https://panda-ui-neog.netlify.app/documentation/avatar/)
