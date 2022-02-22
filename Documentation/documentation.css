@@ -11,7 +11,7 @@
 }
 .mainContent {
   flex-grow: 5;
-  min-width: 35rem;
+  min-width: 50%;
   overflow: scroll;
 }
 .rightNav {
